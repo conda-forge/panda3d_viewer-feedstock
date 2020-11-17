@@ -10,11 +10,9 @@ source:
   sha256: 623842303b9f568d80f5a300d35079738f578917916394abaca03ac4fa7c130a
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
   skip: True  # [py<36]
-  # The following skip will be removed in the feedstock
-  skip: True  # [py>36]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
